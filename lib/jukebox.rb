@@ -50,7 +50,7 @@ end
   
 def run(songs_arr)
   help
-  prompt
+  input = prompt
   
   while input != "exit"
     if input == "list"
