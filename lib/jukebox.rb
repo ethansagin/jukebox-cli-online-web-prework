@@ -50,27 +50,21 @@ end
   
 def run(songs_arr)
   help
-  puts "Please enter a command:"
-  input = gets.chomp
+  prompt
   
   while input != "exit"
     if input == "list"
       list(songs_arr)
-      puts "Please enter a command:"
-      input
+      prompt
     elsif input == "play"
       play(songs_arr)
-      puts "Please enter a command:"
-      input
-      elsif input == "help"
+      prompt
+    elsif input == "help"
       help
-      puts "Please enter a command:"
-      input
-      else
+      prompt
+    else
       puts "Invalid command"
-      help
-      puts "Please enter a command:"
-      input
+      prompt
     end
   end
   exit_jukebox
