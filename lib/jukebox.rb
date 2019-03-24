@@ -55,16 +55,16 @@ def run(songs_arr)
   while input != "exit"
     if input == "list"
       list(songs_arr)
-      prompt
+      input = prompt
     elsif input == "play"
       play(songs_arr)
-      prompt
+      input = prompt
     elsif input == "help"
       help
-      prompt
+      input = prompt
     else
       puts "Invalid command"
-      prompt
+      input = prompt
     end
   end
   exit_jukebox
